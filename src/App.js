@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Avatar from "./components/avatar"
+import Header from "./components/header"
+import UserStatus from "./components/user.status"
+import { faker } from '@faker-js/faker'
+
 
 function App() {
+
+  const status = faker.datatype.boolean() 
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Header/>
+          <div className="user-layout">
+        <Avatar status={status}/>
+        <UserStatus status={status}/>
+          </div>
     </div>
   );
 }

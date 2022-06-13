@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  margin: 31px 0 0 43px;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'DM Sans', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +14,102 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.logo {
+  display: flex;
+  width: 332px;
+  gap: 13px;
+  padding-bottom: 20px;
+  margin-bottom: 22px;
+  border-bottom: 2px solid #dbe5ed ;
+}
+
+.logo-h1 {
+  color: #4b5155;
+  font-size:34px;
+  margin: 0;
+  margin-top: -15px;
+  padding: 0;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: -4px;
+}
+
+.logo-span {
+  color: #7b8793;
+  align-self: flex-end;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+.avatar,
+.avatar-placeholder  {
+  border-radius: 50%;
+
+  object-fit: fill;
+  height: 72px;
+  width: 72px;
+}
+
+.avatar-placeholder {
+  background-color: beige;
+  border: 2px solid #ffffff;
+}
+
+.online-indicator,
+.offline-indicator {
+  position: absolute;
+  background-color: #76c00d;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  height: 15px;
+  width: 15px;
+  margin: -25px 0 0px 57px;
+}
+
+.offline-indicator{
+  background-color: #7b8793;
+}
+
+.user-layout {
+  display: flex;
+  gap:14px
+ 
+}
+
+.user-status {
+align-self: center;
+}
+
+.user-status-name,
+.user-status-job {
+  color:#4b5155;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.user-status-name {
+  font-size: 18px;
+}
+
+.user-status-job,
+.online-statement,
+.offline-statement {
+  color: #7b8793;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.online-statement {
+  color: #76c00d;
+}
+
+.offline-statement {
+  color: #7b8793;
 }
