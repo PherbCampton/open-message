@@ -6,6 +6,7 @@ function ChatList({chatName, avatar}) {
     
     const lastMessage = faker.lorem.sentence().slice(0, 26)+'...'
     const time = faker.date.weekday()
+    
 
 
     return (

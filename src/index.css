@@ -324,7 +324,8 @@ button[type="submit"] {
 
 .chat-list:hover,
 .chat-list:focus,
-.chat-list:active {
+.chat-list:active,
+.chat-list:visited {
   background-color: #F9FAFC;
   border: 1px #DBE5ED solid;
   cursor: pointer;
@@ -417,6 +418,7 @@ button[type="submit"] {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #F9FAFC;
+  border-radius: 12px;
  }
 
  .message-box-input-form{

@@ -3,7 +3,8 @@ import { AllContext } from '../helper/context'
 import { useContext } from 'react'
 import ChatList from "./chat-list"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import GroupChatList from "./group-chat-list";
+import GroupChatList from "./group-chat-list"
+import { faker } from '@faker-js/faker'
 
 function ActiveChats() {
 
@@ -32,6 +33,8 @@ function ActiveChats() {
     chatName11
   } = useContext(AllContext)
 
+  const group = faker.image.avatar()
+
     return (
       <div className="active-chats">
           <form className="search-form">
@@ -39,7 +42,7 @@ function ActiveChats() {
             <button type="submit"><FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /></button>
           </form>
 
-          <Link to="/"><GroupChatList/></Link>
+          <Link to="/"><GroupChatList avatar={group}/></Link>
           <Link to="/1"><ChatList chatName={chatName1} avatar={avatar1}/></Link>
           <Link to="/2"><ChatList chatName={chatName2} avatar={avatar2}/></Link>
           <Link to="/3"><ChatList chatName={chatName3} avatar={avatar3}/></Link>

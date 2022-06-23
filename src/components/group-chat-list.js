@@ -12,7 +12,7 @@ function GroupChatList() {
  
 
     return (
-      <div className="chat-list">
+      <div className="chat-list" tabIndex="0">
         <GroupChatAvatar/>
         <div className="chat-list-content">
             <div className="chat-list-texts">

@@ -12,6 +12,7 @@ library.add(faPlus ,faGear, faChevronDown, faMagnifyingGlass, faFaceSmile, faPap
 function App() {
 
 const avatar = faker.image.avatar()
+const group = faker.image.avatar()
 const avatar1 = faker.image.avatar()
 const avatar2 = faker.image.avatar()
 const avatar3 = faker.image.avatar()
@@ -65,7 +66,7 @@ const chatName11 = faker.name.findName()
         <div className="app">
           <Sidebar/>
             <Routes>
-            <Route path="/" element={<ChatBox ChatName="Family Chat"/>}/>
+            <Route path="/" element={<ChatBox ChatName="Family Chat" avatars={group}/>}/>
             <Route path="/1" element={<ChatBox ChatName={chatName1} avatars={avatar1}/>}/>
             <Route path="/2" element={<ChatBox ChatName={chatName2} avatars={avatar2}/>}/>
             <Route path="/3" element={<ChatBox ChatName={chatName3} avatars={avatar3}/>}/>
